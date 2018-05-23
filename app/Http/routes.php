@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 **/
-
+	Route::get('/','weightLog@index');
 	Route::get('weight_log','weightLog@index');
 	Route::get('weight_log/create','weightLog@create');
 	Route::post('weight_log/save','weightLog@save');
